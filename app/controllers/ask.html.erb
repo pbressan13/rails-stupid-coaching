@@ -1,0 +1,7 @@
+<h1>Stupid Coach</h1>
+
+<%= form_with url: "/answer", method: :get do |form| %>
+  <%= form.label :question, "Ask your coach:" %>
+  <%= form.text_field :question %>
+  <%= form.submit "Ask" %>
+<% end %>
